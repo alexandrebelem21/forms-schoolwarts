@@ -47,15 +47,33 @@
         <label id="label-family">Qual sua família?</label>
 
         <div>
-          <input type="radio" name="family" value="Frontend" id="front" />
+          <input
+            type="radio"
+            class="family"
+            name="family"
+            value="Frontend"
+            id="front"
+          />
           <label for="front">Frontend</label>
         </div>
         <div>
-          <input type="radio" name="family" value="Backend" id="back" />
+          <input
+            type="radio"
+            class="family"
+            name="family"
+            value="Backend"
+            id="back"
+          />
           <label for="back">Backend</label>
         </div>
         <div>
-          <input type="radio" name="family" value="FullStack" id="full" />
+          <input
+            type="radio"
+            class="family"
+            name="family"
+            value="FullStack"
+            id="full"
+          />
           <label for="full">FullStack</label>
         </div>
 
@@ -80,15 +98,33 @@
           <label for="promises">Promises</label>
         </div>
         <div>
-          <input type="checkbox" id="react" class="subject" value="React" />
+          <input
+            type="checkbox"
+            id="react"
+            name="subject"
+            class="subject"
+            value="React"
+          />
           <label for="react">React</label>
         </div>
         <div>
-          <input type="checkbox" id="sql" class="subject" value="SQL" />
+          <input
+            type="checkbox"
+            id="sql"
+            name="subject"
+            class="subject"
+            value="SQL"
+          />
           <label for="sql">SQL</label>
         </div>
         <div>
-          <input type="checkbox" id="Python" class="subject" value="Python" />
+          <input
+            type="checkbox"
+            id="Python"
+            name="subject"
+            class="subject"
+            value="Python"
+          />
           <label for="Python">Python</label>
         </div>
 
@@ -139,8 +175,14 @@
         </div>
 
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-        <!-- <div id="contador"></div> -->
+        <textarea
+          onkeyup="contadorCaracteres(this)"
+          id="textarea"
+          cols="30"
+          rows="10"
+          maxlength="500"
+        ></textarea>
+        <div id="counter">500</div>
 
         <div id="agree">
           <input onclick="ativar()" type="checkbox" id="agreement" />
@@ -151,15 +193,10 @@
         <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
 
-      <!-- <form method="get" id="form-data" style="display: none">
-          
-            <h2 id="titleForm">Formulário de Avaliação</h2>
-          
-          
-            <label for="nome">Nome: </label>
-            <p id="nome"></p>
-          
-        </form> -->
+      <form method="" id="form-data" style="display: none">
+        <h2 id="titleForm">Formulário de Avaliação</h2>
+        <div id="name"></div>
+      </form>
 
       <img
         src="images/trybewarts-colored.svg"

@@ -47,3 +47,12 @@ main {
 #agree {
   display: flex;
 }
+
+#form-data {
+  border: 2px solid red;
+  flex-direction: column;
+}
+
+#nome {
+  display: flex;
+}
