@@ -14,7 +14,7 @@
         src="/images/trybewarts-header-logo.svg"
         class="trybewarts-header-logo"
       />
-      <h1 class="trybewarts-header-title">Trybewarts</h1>
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
 
       <form class="trybewarts-login" method="">
         <input type="email" id="email" name="email" placeholder="Email" />
@@ -39,8 +39,8 @@
           <select name="" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="Corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="Pytherina-house">Pytherina</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </div>
 
@@ -55,8 +55,8 @@
           <label for="back">Backend</label>
         </div>
         <div>
-          <input type="radio" name="family" value="Fullstack" id="full" />
-          <label for="full">Fullstack</label>
+          <input type="radio" name="family" value="FullStack" id="full" />
+          <label for="full">FullStack</label>
         </div>
 
         <label for="" id="label-content"
@@ -88,8 +88,8 @@
           <label for="sql">SQL</label>
         </div>
         <div>
-          <input type="checkbox" id="Phyton" class="subject" value="Phyton" />
-          <label for="Phyton">Phyton</label>
+          <input type="checkbox" id="Python" class="subject" value="Python" />
+          <label for="Python">Python</label>
         </div>
 
         <div id="avaliacao">
@@ -138,29 +138,17 @@
           </div>
         </div>
 
-        <!-- <label for="textarea" class="textarea">Deixe seu comentário:</label>
-          
-            <textarea
-              onkeyup="contadorCaracteres(this)"
-              name="textAvaliacao"
-              id="textarea"
-              cols="30"
-              rows="10"
-              maxlength="500"
-            ></textarea> -->
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         <!-- <div id="contador"></div> -->
 
-        <!-- <input
-          onclick="ativar()"
-          type="checkbox"
-          name="termos"
-          id="agreement"
-        />
-        <label for="agreement" id="label-infos"
-          >Você concorda com o uso das informações acima?</label
-        > -->
-
-        <!-- <button type="button" id="submit-btn" disabled>Enviar</button> -->
+        <div id="agree">
+          <input onclick="ativar()" type="checkbox" id="agreement" />
+          <label for="agreement" id="label-infos"
+            >Você concorda com o uso das informações acima?</label
+          >
+        </div>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
 
       <!-- <form method="get" id="form-data" style="display: none">

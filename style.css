@@ -10,6 +10,10 @@ header {
   height: 10vh;
 }
 
+.trybewarts-login {
+  display: flex;
+}
+
 main {
   display: flex;
 }
@@ -38,4 +42,8 @@ main {
 #rates {
   display: flex;
   flex-wrap: wrap;
+}
+
+#agree {
+  display: flex;
 }
