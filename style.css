@@ -9,3 +9,33 @@ header {
   justify-content: space-between;
   height: 10vh;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#nomeSobre,
+#emailHouse {
+  display: flex;
+}
+
+#avaliacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+#rates {
+  display: flex;
+  flex-wrap: wrap;
+}
