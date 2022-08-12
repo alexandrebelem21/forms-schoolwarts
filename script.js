@@ -1,4 +1,4 @@
-let email = document.querySelector("#email");
+const email = document.querySelector("#email");
 let pass = document.querySelector("#pass");
 let btn = document.querySelector("#submit-btn");
 let agree = document.querySelector("#agreement");
