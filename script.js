@@ -1,4 +1,4 @@
-const email = document.querySelector("#email");
+let email = document.querySelector("#email");
 let pass = document.querySelector("#pass");
 let btn = document.querySelector("#submit-btn");
 let agree = document.querySelector("#agreement");
@@ -49,33 +49,89 @@ btn.addEventListener("click", function () {
 });
 
 function outroForm() {
-  let dados = document.querySelector("#name").innerHTML;
+  names();
+  email1();
+  casa();
+  family();
+  materia();
+  avaliacao();
+  observacao();
+}
+// let inputName = document.querySelector('#input-name').value;
+// let sobreNome = document.querySelector('#input-lastname').value;
+// dados += '<p>' + 'Nome: ' + inputName + ' ' + sobreNome + '</p>';
 
+// let getEmail = document.querySelector('#input-email').value;
+// dados += '<p>' + 'Email: ' + getEmail + '</p>';
+
+// let getCasa = document.querySelector('#house').value;
+// dados += '<p>' + 'Casa: ' + getCasa + '</p>';
+
+// let getFamilia = document.querySelector('input[name='family']:checked').value;
+// dados += '<p>' + 'Família: ' + getFamilia + '</p>';
+
+// let getAvaliacao = document.querySelector('input[name='rate']:checked').value;
+// dados += '<p>' + 'Avaliação: ' + getAvaliacao + '</p>';
+
+// let getObservacoes = document.querySelector('#textarea').value;
+// dados += '<p>' + 'Observações: ' + getObservacoes + '</p>';
+
+// function teste() {
+//   let materia = document.querySelectorAll('input[name='subject']:checked');
+//   let getMateria = [];
+//   for (var i = 0; i < materia.length; ++i) {
+//     getMateria.push(' ' + materia[i].value);
+//   }
+//   dados = '<p>' + 'Matérias: ' + getMateria + '</p>';
+// }
+
+function names() {
+  let dados = document.querySelector("#name").innerHTML;
   let inputName = document.querySelector("#input-name").value;
   let sobreNome = document.querySelector("#input-lastname").value;
   dados += "<p>" + "Nome: " + inputName + " " + sobreNome + "</p>";
-
+  document.querySelector("#name").innerHTML = dados;
+}
+function email1() {
+  let dados = document.querySelector("#email1").innerHTML;
   let getEmail = document.querySelector("#input-email").value;
-  dados += "<p>" + "Email: " + getEmail + "</p>";
+  dados = "<p>" + "Email: " + getEmail + "</p>";
+  document.querySelector("#email1").innerHTML = dados;
+}
 
+function casa() {
+  let dados = document.querySelector("#houses").innerHTML;
   let getCasa = document.querySelector("#house").value;
   dados += "<p>" + "Casa: " + getCasa + "</p>";
-
+  document.querySelector("#houses").innerHTML = dados;
+}
+function family() {
+  let dados = document.querySelector("#familys").innerHTML;
   let getFamilia = document.querySelector('input[name="family"]:checked').value;
   dados += "<p>" + "Família: " + getFamilia + "</p>";
+  document.querySelector("#familys").innerHTML = dados;
+}
+function materia() {
+  let dados = document.querySelector("#materias").innerHTML;
+  let materia = document.querySelectorAll('input[name="subject"]:checked');
+  let getMateria = [];
+  for (var i = 0; i < materia.length; ++i) {
+    getMateria.push(" " + materia[i].value);
+  }
+  dados = "<p>" + "Matérias: " + getMateria + "</p>";
+  document.querySelector("#materias").innerHTML = dados;
+}
 
-  let getMateria = document.querySelector(
-    'input[class="subject"]:checked'
-  ).value;
-  dados += "<p>" + "Matérias: " + (getMateria, getMateria) + "</p>";
-
+function avaliacao() {
+  let dados = document.querySelector("#avaliacoes").innerHTML;
   let getAvaliacao = document.querySelector('input[name="rate"]:checked').value;
   dados += "<p>" + "Avaliação: " + getAvaliacao + "</p>";
+  document.querySelector("#avaliacoes").innerHTML = dados;
+}
 
+function observacao() {
+  let dados = document.querySelector("#observacoes").innerHTML;
   let getObservacoes = document.querySelector("#textarea").value;
   dados += "<p>" + "Observações: " + getObservacoes + "</p>";
-
-  document.querySelector("#name").innerHTML = dados;
-
-  console.log(getMateria);
+  document.querySelector("#observacoes").innerHTML = dados;
 }

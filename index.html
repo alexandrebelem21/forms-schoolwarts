@@ -19,7 +19,7 @@
       <form class="trybewarts-login" method="">
         <input type="email" id="email" name="email" placeholder="Email" />
         <input type="password" id="pass" name="password" placeholder="Senha" />
-        <button onclick="verificaSenha();">Entrar</button>
+        <button type="button" onclick="verificaSenha()">Entrar</button>
       </form>
     </header>
     <main>
@@ -81,17 +81,34 @@
           >Qual conteúdo você está com mais vontade de aprender?</label
         >
         <div>
-          <input type="checkbox" id="hofs" class="subject" value="HoFs" />
-          <label for="hofs">HoFs</label>
+          <input
+            type="checkbox"
+            id="hofs"
+            name="subject"
+            class="subject"
+            value="HoFs"
+          />
+          <label
+            for="hmaterias
+          materiasofs"
+            >HoFs</label
+          >
         </div>
         <div>
-          <input type="checkbox" id="jest" class="subject" value="Jest" />
+          <input
+            type="checkbox"
+            id="jest"
+            name="subject"
+            class="subject"
+            value="Jest"
+          />
           <label for="jest">Jest</label>
         </div>
         <div>
           <input
             type="checkbox"
             id="promises"
+            name="subject"
             class="subject"
             value="Promises"
           />
@@ -196,6 +213,12 @@
       <form method="" id="form-data" style="display: none">
         <h2 id="titleForm">Formulário de Avaliação</h2>
         <div id="name"></div>
+        <div id="email1"></div>
+        <div id="houses"></div>
+        <div id="familys"></div>
+        <div id="materias"></div>
+        <div id="avaliacoes"></div>
+        <div id="observacoes"></div>
       </form>
 
       <img
