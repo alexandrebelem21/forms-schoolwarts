@@ -29,8 +29,7 @@ main {
   height: 500px;
 }
 
-#nomeSobre,
-#emailHouse {
+#nomeSobre , #emailHouse {
   display: flex;
 }
 
